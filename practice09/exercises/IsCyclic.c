@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include "IsCyclic.h"
 
 typedef struct node {
    int data;
@@ -29,7 +30,7 @@ bool IsCircular(Node *head) {
      return fast != NULL;
 }
 
-int main() {
+int runIsCyclic() {
     Node nodes[3];
     nodes[0].next = &nodes[1];
     nodes[1].next = &nodes[2];
