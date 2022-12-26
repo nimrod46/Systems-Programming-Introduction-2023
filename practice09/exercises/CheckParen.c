@@ -6,6 +6,9 @@
 Element clone_func(Element element) {
     char *i = (char *) element;
     char *p = malloc(sizeof(char));
+    if(p == NULL) {
+        //......
+    }
     *p = *i;
     return p;
 }
